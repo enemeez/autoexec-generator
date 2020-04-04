@@ -1,3 +1,10 @@
+'''
+How to use: create a file named 'raw.txt' containing the lines of text you want
+to be bound. This file should be in the same directory as the .py file. Run the script
+and the autoexec.cfg file should be created in the same directory.
+
+'''
+
 with open('raw.txt', 'r') as file, open('autoexec.cfg', 'w') as output:
     output.write('alias "output" "line1"\n')
     data = file.readlines()
